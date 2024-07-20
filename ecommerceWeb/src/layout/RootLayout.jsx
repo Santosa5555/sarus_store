@@ -36,7 +36,7 @@ export default function RootLayout() {
 
                 }}
 
-                className={top ? `` : ` bg-slate-200 rounded-md w-[100%] h-[80px] fixed top-0 z-50`}
+                className={top ? `` : ` bg-slate-200 animate-bounce-once  rounded-md w-[100%] h-[80px] fixed top-0 z-50`}
                  
             >
                 <div className="z-10">
