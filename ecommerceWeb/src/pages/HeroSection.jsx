@@ -29,8 +29,9 @@ export default function HeroSection() {
     return (
 
         <div className="hero-section">
+            <motion.div className="text-center text-lg font-sans font-thin pb-2" initial={{y:0}} animate={{y:-8}} transition={{duration:1}}>"Authentic. Nepali. Yours."</motion.div>
             {/* banner */}
-            <div className="banner-container flex ml-48 relative border-2 h-80 w-[calc(100%-400px)] overflow-hidden " data-aos="fade-up">
+            <motion.div className="banner-container flex ml-48 relative border-2 h-80 w-[calc(100%-400px)] overflow-hidden " initial={{y:0}} animate={{y:4}} transition={{duration:1}}>
                 {banners.map((banner) => (
                     <div key={banner.id} className={currentSlide === banner.id - 1 ? 'absolute outline-none opacity-100 hover:brightness-105h-80 w-[100%]' : ' opacity-0 absolute border-2w-[calc(100%-200px)]'}>
                         <img src={banner.imageUrl} alt={banner.altText} className='w-full  object-cover min-w-[100%] ' />
@@ -47,7 +48,14 @@ export default function HeroSection() {
                 <button className="absolute right-0 top-[50%] text-white" onClick={() => setCurrentSlide(currentSlide === banners.length - 1 ? 0 : currentSlide + 1)}>
                     <IoIosArrowForward size={30} />
                 </button>
+            </motion.div>
+
+
+            {/* //parallax  */}
+            <div className="parallax">
+                
             </div>
+
 
 
 
