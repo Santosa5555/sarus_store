@@ -17,7 +17,7 @@ export const banners = [
   },
   {
     id: 3,
-    imageUrl: '/banneriii.jpeg',
+    imageUrl: '/banner4.jpeg',
     title: 'Exclusive Offers',
     subtitle: 'Members get exclusive discounts',
     link: '/exclusive-offers',
@@ -33,7 +33,7 @@ export const banners = [
   },
   {
     id: 5,
-    imageUrl: '/banneri.jpg',
+    imageUrl: '/bannerii.jpg',
     title: 'Free Shipping',
     subtitle: 'Free shipping on orders over $50',
     link: '/free-shipping',
@@ -41,7 +41,7 @@ export const banners = [
   },
   {
     id: 6,
-    imageUrl: '/bannerv.jpeg',
+    imageUrl: '/bannerv.jpg',
     title: 'Free Shipping',
     subtitle: 'Free shipping on orders over $50',
     link: '/free-shipping',

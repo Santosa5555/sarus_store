@@ -15,6 +15,11 @@ function App() {
         <Route index element={<HeroSection/>}></Route>
         <Route path='/cart' element={<Cart/>}></Route>
         <Route path='/product1' element={<Product1/>}></Route>
+        {/* <Route path='/fashion' element={<Fashion/>}></Route>
+        <Route path='/home&kitchen' element={<HomeAndKitchen/>}></Route>
+        <Route path='/electronics' element={<Electronics/>}></Route>
+        <Route path='/beauty&health' element={<HealthAndBeauty/>}></Route>
+        <Route path='/toys&games' element={<ToyAndGames/>}></Route> */}
         {/* <Route index element={<Login/>}></Route>
         <Route index element={<Signup/>}></Route>
         <Route index element={<Categories/>}></Route> */}
