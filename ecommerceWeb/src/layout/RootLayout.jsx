@@ -36,7 +36,7 @@ export default function RootLayout() {
 
                 }}
 
-                className={top ? `` : ` bg-slate-200 rounded-md w-[100%] h-[80px] fixed top-0 z-50`}
+                className={top ? `` : ` bg-slate-200 animate-bounce-once shadow-lg shadow-zinc-400 rounded-md w-[100%] h-[80px] fixed top-0 z-50`}
                  
             >
                 <div className="z-10">
@@ -52,6 +52,7 @@ export default function RootLayout() {
                                     type="text"
                                     placeholder="What are you lookin for?   "
                                     className="border-none mt-1 mr-4 p-2 rounded-md focus:outline-none bg-white focus:ring-2 focus:ring-blue-500 "
+                                    // onKeyUp={}
                                 />
 
 
