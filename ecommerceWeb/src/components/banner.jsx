@@ -1,7 +1,7 @@
 export const banners = [
   {
     id: 1,
-    imageUrl: '/bannervi.jpg',
+    imageUrl: '/banner/bannervi.jpg',
     title: 'Summer Sale',
     subtitle: 'Up to 50% off on all items',
     link: '/sale',
@@ -9,7 +9,7 @@ export const banners = [
   },
   {
     id: 2,
-    imageUrl: '/bannervii.jpg',
+    imageUrl: '/banner/bannervii.jpg',
     title: 'New Arrivals',
     subtitle: 'Check out our latest collection',
     link: '/new-arrivals',
@@ -17,7 +17,7 @@ export const banners = [
   },
   {
     id: 3,
-    imageUrl: '/banner4.jpeg',
+    imageUrl: '/banner/banner4.jpeg',
     title: 'Exclusive Offers',
     subtitle: 'Members get exclusive discounts',
     link: '/exclusive-offers',
@@ -25,7 +25,7 @@ export const banners = [
   },
   {
     id: 4,
-    imageUrl: '/banneriv.jpg',
+    imageUrl: '/banner/banneriv.jpg',
     title: 'Free Shipping',
     subtitle: 'Free shipping on orders over $50',
     link: '/free-shipping',
@@ -33,7 +33,7 @@ export const banners = [
   },
   {
     id: 5,
-    imageUrl: '/bannerii.jpg',
+    imageUrl: '/banner/bannerii.jpg',
     title: 'Free Shipping',
     subtitle: 'Free shipping on orders over $50',
     link: '/free-shipping',
@@ -41,7 +41,7 @@ export const banners = [
   },
   {
     id: 6,
-    imageUrl: '/bannerv.jpg',
+    imageUrl: '/banner/bannerv.jpg',
     title: 'Free Shipping',
     subtitle: 'Free shipping on orders over $50',
     link: '/free-shipping',
