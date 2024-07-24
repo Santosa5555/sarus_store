@@ -41,7 +41,7 @@ export default function HeroSection() {
     return (
 
         <div className="hero-section">
-            <motion.div className="text-center text-sm md:text-lg lg:text-xl font-sans sm:text-sm font-thin tracking-wide pb-2"
+            <motion.div className="text-center text-sm md:text-lg lg:text-xl  sm:text-sm text-gray-500 bg-[#fffcf5] border-slate-200 pb-2"
              initial={{ y: 0 }} animate={{ y: -8 }} transition={{ duration: 1 }}>"Authentic. Nepali. Yours."</motion.div>
             {/* banner */}
             <motion.div className="banner-container flex mx-auto relative border-2 lg:h-72 md:h-64 xl:h-80 sm:h-40 h-20 xl:w-[calc(100%-400px)] 

@@ -37,13 +37,13 @@ export default function RootLayout() {
 
                 }}
 
-                className={top ? `` : ` bg-slate-200 animate-bounce-once shadow-lg shadow-zinc-400 rounded-md w-[100%] h-[80px]  fixed top-0 z-50`}
+                className={top ? `` : ` bg-slate-200  animate-bounce-once shadow-lg shadow-zinc-400 rounded-md w-[100%] h-[80px]  fixed top-0 z-50`}
                  
             >
                 <Header/>
 
             </motion.div>
-            <main className='mt-[100px]'>
+            <main className='mt-[100px] bg-stone-100'>
                 <Outlet />
             </main>
 
