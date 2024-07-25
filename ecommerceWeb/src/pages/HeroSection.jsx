@@ -41,7 +41,7 @@ export default function HeroSection() {
     return (
 
         <div className="hero-section">
-            <motion.div className="text-center text-sm md:text-lg lg:text-xl  sm:text-sm text-gray-500 bg-[#fffcf5] border-slate-200 pb-2"
+            <motion.div className="text-center font-light text-sm md:text-xl lg:text-2xl sm:text-lg text-gray-700 bg-[#fffcf5] border-t-2 border-slate-200 pb-2"
              initial={{ y: 0 }} animate={{ y: -8 }} transition={{ duration: 1 }}>"Authentic. Nepali. Yours."</motion.div>
             {/* banner */}
             <motion.div className="banner-container flex mx-auto relative border-2 lg:h-72 md:h-64 xl:h-80 sm:h-40 h-20 xl:w-[calc(100%-400px)] 
@@ -67,12 +67,12 @@ export default function HeroSection() {
 
 
             {/* //categories */}
-            <div className="categories mt-24  bg-[#fffcf5] ml-20 mr-20 xl:h-[53rem] lg:h-[49rem] md:h-[46rem] h-[32rem] sm:h-[39rem] relative flex flex-col  items-center">
+            <div className="categories mt-24 shadow-lg bg-[#fffcf5] ml-20 mr-20 xl:h-[53rem] lg:h-[49rem] md:h-[46rem] h-[32rem] sm:h-[39rem] relative flex flex-col  items-center">
 
                 <p className='text-center font-thin tracking-[0.2em] animate-bounce sm:text-sm md:text-lg lg:text-xl xl:text-xl text-[8px] mt-4'>CATEGORIES </p>
                 <HiChevronDown className='animate-bounce' />
                 <div className="categoyGrid grid grid-cols-4 gap-11 mt-12 ">
-                    <NavLink to="fashion"><img src='./categories/wardrobe.png' className='w-10 sm:w-12 md:w-16 lg:w-20 xl:w-20 hover:brightness-50 ' data-aos="zoom-in" data-aos-delay="600" data-aos-once="true" /></NavLink>
+                    <NavLink to="fashion"><img src='./categories/wardrobe.png' className='w-10 sm:w-12 md:w-16 lg:w-20 xl:w-20 hover:brightness-50' data-aos="zoom-in" data-aos-delay="600" data-aos-once="true" /></NavLink>
                     <NavLink to="home&kitchen"><img src='./categories/home&kitchen.png' className='w-10 sm:w-12 md:w-16 lg:w-20  hover:brightness-50 ' data-aos="zoom-in" data-aos-delay="600" data-aos-once="true" /></NavLink>
                     <NavLink to="electronics"><img src='./categories/electronics.png' className='w-10 sm:w-12 md:w-16 xl:w-20 lg:w-20 hover:brightness-50 ' data-aos="zoom-in " data-aos-delay="600" data-aos-once="true" /></NavLink>
                     <NavLink to="arts&crafts" className=''><img src='./categories/porcelain.png' className='w-10 sm:w-12 xl:w-20 md:w-16 lg:w-20 hover:brightness-50 ' data-aos="zoom" data-aos-delay="600" data-aos-once="true" /></NavLink>
