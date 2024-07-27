@@ -1,15 +1,19 @@
-import { useState } from 'react'
-import './App.css'
-import {Route,createBrowserRouter, RouterProvider,createRoutesFromElements} from 'react-router-dom'
-import RootLayout from './layout/RootLayout'
+import { useState } from "react";
+import "./App.css";
+import {
+  Route,
+  createBrowserRouter,
+  RouterProvider,
+  createRoutesFromElements,
+} from "react-router-dom";
+import RootLayout from "./layout/RootLayout";
 
-import Cart from './pages/Cart'
-import HeroSection from './pages/HeroSection'
-import Product1 from './components/products/product1'
-
+import Cart from "./pages/Cart";
+import HeroSection from "./pages/HeroSection";
+import Product1 from "./components/products/product1";
 
 function App() {
-  const router=createBrowserRouter(
+  const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/'element={<RootLayout/>}>
         <Route index element={<HeroSection/>}></Route>
@@ -25,12 +29,8 @@ function App() {
         <Route index element={<Categories/>}></Route> */}
       </Route>
     )
-  )
-  return (
-   
-     <RouterProvider router={router}/>     
-   
-  )
+  );
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
