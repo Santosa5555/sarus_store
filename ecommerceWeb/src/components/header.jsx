@@ -59,17 +59,17 @@ const LargeScreenHeader = ({ cartProducts }) => {
 
             <header>
 
-                <nav className='flex space-x-6 items-center mx-auto font-sans translate-x-3 tracking-wider font-bold text-lg'>
+                <nav className='flex space-x-5 items-center mx-auto  translate-x-3 tracking-wider font-thin text-lg'>
 
 
-                    <NavLink to="/" className=''><img src={logo} alt='sarus' className='hover:animate-bounce-once ml-4 mt-2 sm:h-14 md:h-14 lg:h-14 h-10 lg:w-40 sm:w-40 w-28 md:w-40 '></img></NavLink>
+                    <NavLink to="/" className=''><img src={logo} alt='sarus' className='hover:animate-bounce-once ml-4 mt-2 sm:h-14 md:h-14 lg:h-16 h-10 lg:w-48 sm:w-40 w-28 md:w-40 '></img></NavLink>
                     <NavLink to="categories" className='lg:pl-ml-2 pl-4 mt-2 font-thin text-xl hover:text-slate-400'>Category</NavLink>
                     <form action="" className=' rounded-md relative lg:pl-12 xl:pl-24 md:pl-12 pl-10 pt-3 '>
 
                         <input
                             type="text"
                             placeholder="What are you lookin for? "
-                            className=" xl:w-[29rem] lg:w-[20rem] md:w-72 sm:w-52 border-2 mt-2 font-light text-[15px] pl-7 mr-4 p-2 ml-2 rounded-xl text-md focus:outline-none  focus:ring-1 focus:ring-stone-text-slate-400 hover:shadow-md bg-white  tracking-normal "
+                            className=" xl:w-[29rem] lg:w-[20rem] md:w-72 sm:w-52 border-2 mt-2  font-extralight text-[15px] pl-7 mr-4 p-2 ml-1 rounded-xl text-md focus:outline-none  focus:ring-1 focus:ring-stone-text-slate-400 hover:shadow-md bg-white  tracking-normal "
                         // onKeyUp={}
                         />
 
@@ -78,7 +78,7 @@ const LargeScreenHeader = ({ cartProducts }) => {
                     </form>
 
 
-                    <ul className="absolute xl:right-24 lg:right-12 mt-3 md:right-12 flex xl:space-x-5 lg:space-x-3 space-x-3  items-center font-thin text-lg   ">
+                    <ul className="absolute xl:right-24 lg:right-12 mt-3 md:right-12 flex xl:space-x-5 lg:space-x-4 space-x-4  items-center font-thin text-lg   ">
                         <NavLink to="login" className='hover:text-slate-400'>Login</NavLink>
                         <p>|</p>
                         <NavLink to="signup" className='hover:text-slate-400'>Signup</NavLink>

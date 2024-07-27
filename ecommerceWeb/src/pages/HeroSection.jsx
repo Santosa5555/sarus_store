@@ -41,7 +41,7 @@ export default function HeroSection() {
     return (
 
         <div className="hero-section">
-            <motion.div className="text-center tracking-wide text-[#393E46] text-sm md:text-xl lg:text-6xl sm:text-lg   bg-[#fffcf5]   border-slate-200 pb-2"
+            <motion.div className="text-center tracking-wide text-[#393E46] text-sm md:text-xl lg:text-6xl sm:text-lg  font-display bg-[#fffcf5]   border-slate-200 pb-2"
              initial={{ y: 0 }} animate={{ y: -8 }} transition={{ duration: 1 }}>"Authentic. Nepali. Yours."</motion.div>
             {/* banner */}
             <motion.div className="banner-container flex mx-auto relative border-2 lg:h-72 md:h-64 xl:h-80 sm:h-40 h-20 xl:w-[calc(100%-400px)] 
@@ -67,20 +67,82 @@ export default function HeroSection() {
 
 
             {/* //categories */}
-            <div className="categories mt-24 shadow-lg bg-[#fffcf5] ml-20 mr-20 xl:h-[53rem] lg:h-[49rem] md:h-[46rem] h-[32rem] sm:h-[39rem] relative flex flex-col  items-center">
+            <div className="categories mt-24 shadow-lg bg-[#fffcf5] ml-20 mr-20 xl:h-[53rem] lg:h-[51   rem] md:h-[47rem]  sm:h-[38rem] xs:h-[28rem] h-[27rem] relative flex flex-col  items-center">
 
                 <p className='text-center font-thin tracking-[0.2em] animate-bounce sm:text-sm md:text-lg lg:text-xl xl:text-xl text-[8px] mt-3'>CATEGORIES </p>
                 <HiChevronDown className='animate-bounce' />
-                <div className="categoyGrid grid grid-cols-4 gap-11 mt-12 ">
-                    <NavLink to="fashion"><img src='./categories/wardrobe.png' className='w-10 sm:w-12 md:w-16 lg:w-20 xl:w-20 hover:brightness-50' data-aos="zoom-in" data-aos-delay="600" data-aos-once="true" /></NavLink>
-                    <NavLink to="home&kitchen"><img src='./categories/home&kitchen.png' className='w-10 sm:w-12 md:w-16 lg:w-20  hover:brightness-50 ' data-aos="zoom-in" data-aos-delay="600" data-aos-once="true" /></NavLink>
-                    <NavLink to="electronics"><img src='./categories/electronics.png' className='w-10 sm:w-12 md:w-16 xl:w-20 lg:w-20 hover:brightness-50 ' data-aos="zoom-in " data-aos-delay="600" data-aos-once="true" /></NavLink>
-                    <NavLink to="arts&crafts" className=''><img src='./categories/porcelain.png' className='w-10 sm:w-12 xl:w-20 md:w-16 lg:w-20 hover:brightness-50 ' data-aos="zoom" data-aos-delay="600" data-aos-once="true" /></NavLink>
-                    <NavLink to="beauty" className=''><img src='./categories/beauty.png' className=' w-10 sm:w-12 xl:w-20 md:w-16 lg:w-20 hover:brightness-50 ' data-aos="zoom-in" data-aos-delay="600" data-aos-once="true" /></NavLink>
-                    <NavLink to="sports" className=''><img src='./categories/sports.png' className=' w-10 sm:w-12 xl:w-20 md:w-16 lg:w-20 hover:brightness-50 ' data-aos="fade-down" data-aos-delay="600" data-aos-once="true" /></NavLink>
-                    <NavLink to="furniture"><img src='./categories/furnitures.png' className=' w-10 sm:w-12 md:w-16 xl:w-20 lg:w-20 hover:brightness-50 ' data-aos="fade-down" data-aos-delay="600" data-aos-once="true" /></NavLink>
-                    <NavLink to="grocery"><img src='./categories/grocery.png' className=' w-10 sm:w-12 md:w-16 xl:w-20 lg:w-20 hover:brightness-50 ' data-aos="zoom-in" data-aos-delay="600" data-aos-once="true" /></NavLink>
-                    <NavLink to="grocery"className='col-start-2 col-end-4 '><img src='./categories/gift.png' className='opacity-5 z--1 w-10 sm:w-12 md:w-20  lg:w-28 hover:brightness-50 ' data-aos="fade-up"  /></NavLink>
+                <div className="categoyGrid grid grid-cols-4 gap-0  lg:mx-auto md:ml-24 sm:ml-20 xs:ml-16 xss:ml-12 xs:mx-auto mt-12   ">
+                    <NavLink to="fashion" className=" 
+                    relative before:content-[attr(data-tip)]
+                    before:opacity-0
+                    hover:before:opacity-100
+                    
+                    " data-tip="fashion"><img src='./categories/wardrobe.png' className='w-10 sm:w-12 md:w-16 lg:w-20 xl:w-20 hover:brightness-50' data-aos="zoom-in" data-aos-delay="600" data-aos-once="true" /></NavLink>
+
+                    <NavLink 
+                    to="home&kitchen"
+                    className=" 
+                    relative before:content-[attr(data-tip)] 
+                    before:opacity-0
+                    hover:before:opacity-100"
+                    data-tip="Home&Kitchen"
+                    
+                    ><img src='./categories/home&kitchen.png' className='w-10 sm:w-12 md:w-16 lg:w-20  hover:brightness-50 ' data-aos="zoom-in" data-aos-delay="600" data-aos-once="true" /></NavLink>
+
+                    <NavLink 
+                    to="electronics"
+                    data-tip="Electronics/gadgets"
+                    className=" 
+                    relative before:content-[attr(data-tip)] block
+                    before:opacity-0
+                    hover:before:opacity-100"
+                    
+                    
+                    ><img src='./categories/electronics.png' className='w-10 sm:w-12 md:w-16 xl:w-20 lg:w-20 hover:brightness-50 ' data-aos="zoom-in " data-aos-delay="600" data-aos-once="true" /></NavLink>
+
+                    <NavLink to="arts&crafts"
+                      data-tip="arts&crafts"
+                      className=" 
+                      relative before:content-[attr(data-tip)]
+                      before:opacity-0
+                    hover:before:opacity-100 "
+                     
+                     ><img src='./categories/porcelain.png' className='w-10 sm:w-12 xl:w-20 md:w-16 lg:w-20 hover:brightness-50 ' data-aos="zoom" data-aos-delay="600" data-aos-once="true" /></NavLink>
+
+                    <NavLink to="beauty"
+                     data-tip="Beauty"
+                     className=" 
+                     relative before:content-[attr(data-tip)]
+                     before:opacity-0
+                    hover:before:opacity-100"
+                    
+                    ><img src='./categories/beauty.png' className=' w-10 sm:w-12 xl:w-20 md:w-16 lg:w-20 hover:brightness-50 ' data-aos="zoom-in" data-aos-delay="600" data-aos-once="true" /></NavLink>
+
+                    <NavLink to="sports" 
+                     data-tip="Sports"
+                     className=" 
+                     relative before:content-[attr(data-tip)]
+                     before:opacity-0
+                    hover:before:opacity-100"
+                    
+                    ><img src='./categories/sports.png' className=' w-10 sm:w-12 xl:w-20 md:w-16 lg:w-20 hover:brightness-50 ' data-aos="fade-down" data-aos-delay="600" data-aos-once="true" /></NavLink>
+
+                    <NavLink to="furniture"
+                     data-tip="Furniture"
+                     className=" 
+                     relative before:content-[attr(data-tip)]
+                     before:opacity-0
+                    hover:before:opacity-100"
+                    ><img src='./categories/furnitures.png' className=' w-10 sm:w-12 md:w-16 xl:w-20 lg:w-20 hover:brightness-50 ' data-aos="fade-down" data-aos-delay="600" data-aos-once="true" /></NavLink>
+
+                    <NavLink to="grocery"
+                     data-tip="grocery"
+                     className=" 
+                     relative before:content-[attr(data-tip)]
+                     before:opacity-0
+                    hover:before:opacity-100"
+                    ><img src='./categories/grocery.png' className=' w-10 sm:w-12 md:w-16 xl:w-20 lg:w-20 hover:brightness-50 ' data-aos="zoom-in" data-aos-delay="600" data-aos-once="true" /></NavLink>
+                    {/* <NavLink to="grocery"className='col-start-2 col-end-4 '><img src='./categories/gift.png' className='opacity-5 z--1 w-10 sm:w-12 md:w-20  lg:w-28  ' data-aos="fade-up"  /></NavLink> */}
                     {/* <NavLink to="travels" className=''><img src='./categories/travels.png' className=' w-20 sm:w-12 md:w-16 lg:w-20'/></NavLink> */}
 
 
@@ -90,7 +152,7 @@ export default function HeroSection() {
 
 
                 <img src='./cartEcom2.png' alt='cart'
-                    className=' absolute bottom-1 max-w-[15rem] sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl'
+                    className=' absolute bottom-1 max-w-[15rem] xs-[22rem]  sm:max-w-sm xs:max-w-[16rem] md:max-w-[32rem] lg:max-w-[35rem] xl:max-w-xl xl:h-[35rem] mx-auto lg:mr-20'
                     data-aos="fade-up"
                 />
 
