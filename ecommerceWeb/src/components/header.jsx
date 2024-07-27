@@ -9,7 +9,7 @@ import HamMenu from './HamMenu';
 const Header = () => {
     const cartProducts = useSelector(state => state.cart)
 
-    const isSmall = useMediaQuery({ query: "(max-width: 828px)" });
+    const isSmall = useMediaQuery({ query: "(max-width: 984px)" });
     return (
         <div>
             {isSmall ? <SmallScreenHeader cartProducts={cartProducts} /> : <LargeScreenHeader cartProducts={cartProducts} />}
@@ -59,17 +59,17 @@ const LargeScreenHeader = ({ cartProducts }) => {
 
             <header>
 
-                <nav className='flex space-x-6 items-center mx-auto'>
+                <nav className='flex space-x-6 items-center mx-auto font-sans translate-x-3 tracking-wider font-bold text-lg'>
 
 
                     <NavLink to="/" className=''><img src={logo} alt='sarus' className='hover:animate-bounce-once ml-4 mt-2 sm:h-14 md:h-14 lg:h-14 h-10 lg:w-40 sm:w-40 w-28 md:w-40 '></img></NavLink>
-                    <NavLink to="categories" className='ml-4 mt-1 hover:text-slate-500'>Category</NavLink>
-                    <form action="" className=' rounded-md relative  '>
+                    <NavLink to="categories" className='lg:pl-ml-2 pl-4 mt-2 font-thin text-xl hover:text-slate-400'>Category</NavLink>
+                    <form action="" className=' rounded-md relative lg:pl-12 xl:pl-24 md:pl-12 pl-10 pt-3 '>
 
                         <input
                             type="text"
                             placeholder="What are you lookin for? "
-                            className=" lg:w-80 md:w-64 sm:w-52 border-2 mt-2  mr-4 p-2 ml-3 rounded-xl text-md focus:outline-none  focus:ring-1 focus:ring-stone-500 hover:shadow-md bg-white   "
+                            className=" xl:w-[29rem] lg:w-[20rem] md:w-72 sm:w-52 border-2 mt-2 font-light text-[15px] pl-7 mr-4 p-2 ml-2 rounded-xl text-md focus:outline-none  focus:ring-1 focus:ring-stone-text-slate-400 hover:shadow-md bg-white  tracking-normal "
                         // onKeyUp={}
                         />
 
@@ -78,12 +78,12 @@ const LargeScreenHeader = ({ cartProducts }) => {
                     </form>
 
 
-                    <ul className="absolute lg:right-24 mt-2 md:right-12 flex lg:space-x-5 md:space-x-3 items-center ">
-                        <NavLink to="login" className='hover:text-slate-500'>Login</NavLink>
+                    <ul className="absolute xl:right-24 lg:right-12 mt-3 md:right-12 flex xl:space-x-5 lg:space-x-3 space-x-3  items-center font-thin text-lg   ">
+                        <NavLink to="login" className='hover:text-slate-400'>Login</NavLink>
                         <p>|</p>
-                        <NavLink to="signup" className='hover:text-slate-500'>Signup</NavLink>
-                        <NavLink to="cart" className={cartProducts.length > 0 ? `flex text-green-600` : `flex`}><CiShoppingCart className='text-2xl ' /> {cartProducts.length}</NavLink>
-                        <NavLink to="contact" className='hover:text-slate-500'>contact</NavLink>
+                        <NavLink to="signup" className='hover:text-slate-400'>Signup</NavLink>
+                        <NavLink to="cart" className={cartProducts.length > 0 ? `flex text-green-600` : `flex`}><CiShoppingCart className='text-3xl ' /> {cartProducts.length}</NavLink>
+                        <NavLink to="contact" className='hover:text-slate-400'>contact</NavLink>
 
                     </ul>
 

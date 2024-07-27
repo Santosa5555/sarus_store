@@ -43,7 +43,7 @@ export default function RootLayout() {
                 <Header/>
 
             </motion.div>
-            <main className='mt-[140px] bg-stone-100'>
+            <main className='mt-[110px] bg-stone-100'>
                 <Outlet />
             </main>
 
