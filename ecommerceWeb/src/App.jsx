@@ -11,6 +11,7 @@ import RootLayout from "./layout/RootLayout";
 import Cart from "./pages/Cart";
 import HeroSection from "./pages/HeroSection";
 import Product1 from "./components/products/product1";
+import NotFound from "./pages/Notfound";
 
 function App() {
   const router = createBrowserRouter(
@@ -27,6 +28,7 @@ function App() {
         {/* <Route index element={<Login/>}></Route>
         <Route index element={<Signup/>}></Route>
         <Route index element={<Categories/>}></Route> */}
+        <Route path="*" element={<NotFound/>}></Route>
       </Route>
     )
   );

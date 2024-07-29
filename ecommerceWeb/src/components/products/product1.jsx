@@ -3,36 +3,17 @@ import { useDispatch } from 'react-redux'
 import { add } from '../../stores/cartslice'
 import { Provider } from 'react-redux'
 import store from '../../stores/store'
+import axios from 'axios';
+import { asyncThunkCreator } from '@reduxjs/toolkit'
+import useFetch from '../../c-hooks/use-fetch'
+
 
 export default function Product1() {
 
-    const [loading, setLoading] = useState(false)
-    const [product1, setProduct1] = useState([])
-    const [error, setError] = useState(null)
+    
     const[addedItems,SetAddedItems]=useState({})
     const dispatch = useDispatch()
-    async function fetchproduct1() {
-        try {
-            setLoading(true)
-            const response = await fetch(`https://dummyjson.com/products`)
-            const result = await response.json()
-            if (result && result.products && result.products.length) {
-                setProduct1(result.products)
-                setLoading(false)
-
-            }
-            console.log(result.products)
-            console.log(product1)
-
-        } catch (error) {
-            setError(error)
-
-        }
-    }
-    useEffect(() => {
-        fetchproduct1()
-
-    }, [])
+    const{data,loading}=useFetch(`https://dummyjson.com/products `)
     function addToCart(item,index) {
         
         dispatch(add(item))
@@ -47,12 +28,12 @@ export default function Product1() {
         <div>
             <Provider store={store}>
                 {loading && <div className='text-center'>loading...</div>}
-                {error && <div>{error}</div>}
-                {!loading && !error && (
+                {/* {error && <div>{error}</div>} */}
+                {!loading && (
                     <div className="">
                         <div className="grid grid-cols-4 gap-4 custom-grid ml-36 mr-36">
 
-                            {product1.map((item, index) => {
+                            {data.map((item, index) => {
                                 return (
                                     <div key={index} className="border-2 flex flex-col justify-between border-gray-300 hover:shadow-xl p-4">
                                         <img className="w-full h-64 object-cover  hover:object-none   mb-4" src={item.thumbnail} alt={item.title} />

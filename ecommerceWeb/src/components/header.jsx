@@ -59,7 +59,7 @@ const LargeScreenHeader = ({ cartProducts }) => {
 
             <header>
 
-                <nav className='flex space-x-5 items-center mx-auto  translate-x-3 tracking-wider font-thin text-lg'>
+                <nav className='flex space-x-4 items-center mx-auto  translate-x-3 tracking-wider font-thin text-lg'>
 
 
                     <NavLink to="/" className=''><img src={logo} alt='sarus' className='hover:animate-bounce-once ml-4 mt-2 sm:h-14 md:h-14 lg:h-16 h-10 lg:w-48 sm:w-40 w-28 md:w-40 '></img></NavLink>

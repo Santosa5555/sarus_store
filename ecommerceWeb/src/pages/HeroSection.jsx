@@ -8,6 +8,8 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { NavLink } from 'react-router-dom';
 import { HiChevronDown } from "react-icons/hi2";
+import HeroListProducts from '../components/products/HeroListProducts';
+import { MdArrowForwardIos } from "react-icons/md";
 
 
 export default function HeroSection() {
@@ -67,11 +69,11 @@ export default function HeroSection() {
 
 
             {/* //categories */}
-            <div className="categories mt-24 shadow-lg bg-[#fffcf5] ml-20 mr-20 xl:h-[53rem] lg:h-[51   rem] md:h-[47rem]  sm:h-[38rem] xs:h-[28rem] h-[27rem] relative flex flex-col  items-center">
+            <div className="categories mt-[93px] shadow-lg bg-[#fffcf5] ml-20 mr-20 xl:h-[53rem] lg:h-[51rem] md:h-[47rem] sm:h-[38rem] xs:h-[28rem] h-[27rem] relative flex flex-col  items-center">
 
                 <p className='text-center font-thin tracking-[0.2em] animate-bounce sm:text-sm md:text-lg lg:text-xl xl:text-xl text-[8px] mt-3'>CATEGORIES </p>
                 <HiChevronDown className='animate-bounce' />
-                <div className="categoyGrid grid grid-cols-4 gap-0  lg:mx-auto md:ml-24 sm:ml-20 xs:ml-16 xss:ml-12 xs:mx-auto mt-12   ">
+                <div className="categoyGrid grid grid-cols-4 gap-0  lg:mx-auto md:ml-36 sm:ml-20 xs:ml-16 xss:ml-12 xs:mx-auto mt-12   ">
                     <NavLink to="fashion" className=" 
                     relative before:content-[attr(data-tip)]
                     before:opacity-0
@@ -155,6 +157,16 @@ export default function HeroSection() {
                     className=' absolute bottom-1 max-w-[15rem] xs-[22rem]  sm:max-w-sm xs:max-w-[16rem] md:max-w-[32rem] lg:max-w-[35rem] xl:max-w-xl xl:h-[35rem] mx-auto lg:mr-20'
                     data-aos="fade-up"
                 />
+
+            </div>
+            {/* for you */}
+            <div className="mt-20 ">
+                <h1 className='flex text-3xl font-sans text-gray-700 ml-24 mb-10 pl-5  bg-white rounded-md shadow-md  mr-20 relative'>For You <MdArrowForwardIos className='absolute right-2 '/></h1>
+
+
+
+            <HeroListProducts/>
+            
 
             </div>
             {/* top or for you or feature or  */}
