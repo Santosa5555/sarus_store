@@ -59,11 +59,11 @@ const LargeScreenHeader = ({ cartProducts }) => {
 
             <header>
 
-                <nav className='flex space-x-4 items-center mx-auto  translate-x-3 tracking-wider font-thin text-lg'>
+                <nav className='flex space-x-4 items-center mx-auto  translate-x-3 tracking-wider  text-lg'>
 
 
                     <NavLink to="/" className=''><img src={logo} alt='sarus' className='hover:animate-bounce-once ml-4 mt-2 sm:h-14 md:h-14 lg:h-16 h-10 lg:w-48 sm:w-40 w-28 md:w-40 '></img></NavLink>
-                    <NavLink to="categories" className='lg:pl-ml-2 pl-4 mt-2 font-thin text-xl hover:text-slate-400'>Category</NavLink>
+                    <NavLink to="product1" className='lg:pl-ml-2 pl-4 mt-2  text-xl hover:text-slate-400 font-poppins '>Shop</NavLink>
                     <form action="" className=' rounded-md relative lg:pl-12 xl:pl-24 md:pl-12 pl-10 pt-3 '>
 
                         <input
@@ -74,11 +74,11 @@ const LargeScreenHeader = ({ cartProducts }) => {
                         />
 
 
-
+/
                     </form>
 
 
-                    <ul className="absolute xl:right-24 lg:right-12 mt-3 md:right-12 flex xl:space-x-5 lg:space-x-4 space-x-4  items-center font-thin text-lg   ">
+                    <ul className="absolute xl:right-24 lg:right-12 mt-3 md:right-12 flex xl:space-x-5 lg:space-x-4 space-x-4  items-center  text-lg   ">
                         <NavLink to="login" className='hover:text-slate-400'>Login</NavLink>
                         <p>|</p>
                         <NavLink to="signup" className='hover:text-slate-400'>Signup</NavLink>

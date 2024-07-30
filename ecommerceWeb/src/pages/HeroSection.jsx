@@ -69,7 +69,7 @@ export default function HeroSection() {
 
 
             {/* //categories */}
-            <div className="categories mt-[93px] shadow-lg bg-[#fffcf5] ml-20 mr-20 xl:h-[53rem] lg:h-[51rem] md:h-[47rem] sm:h-[38rem] xs:h-[28rem] h-[27rem] relative flex flex-col  items-center">
+            <div className="categories mt-[93px] shadow-lg bg-[#fffcf5] ml-36 mr-36 xl:h-[53rem] lg:h-[51rem] md:h-[47rem] sm:h-[38rem] xs:h-[28rem] h-[27rem] relative flex flex-col  items-center">
 
                 <p className='text-center font-thin tracking-[0.2em] animate-bounce sm:text-sm md:text-lg lg:text-xl xl:text-xl text-[8px] mt-3'>CATEGORIES </p>
                 <HiChevronDown className='animate-bounce' />
@@ -160,8 +160,12 @@ export default function HeroSection() {
 
             </div>
             {/* for you */}
-            <div className="mt-20 ">
-                <h1 className='flex text-3xl font-sans text-gray-700 ml-24 mb-10 pl-5  bg-white rounded-md shadow-md  mr-20 relative'>For You <MdArrowForwardIos className='absolute right-2 '/></h1>
+            <div className="mt-32 border-t-4 ml-10 mr-10 ">
+                <h1 className='flex text-3xl font-sans text-white ml-24 mb-4 pl-5 font-bold bg-[#FFF8F3]
+                
+                bg-gradient-to-r from-slate-600 via-white to-white animate-gradient-x  border-t-2 rounded-lg 
+                
+                mr-20 relative'data-aos="zoom-in-out" ><p data-aos="fade-in-out"> For You</p><MdArrowForwardIos className='absolute right-2 '/></h1>
 
 
 

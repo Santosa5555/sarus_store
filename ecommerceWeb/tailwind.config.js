@@ -7,12 +7,27 @@ export default {
     extend: {
       animation: {
         'bounce-once': 'bounceOnce 0.1s ease-in-out 1',
+        'gradient-x': 'gradient-x 5s ease 0',
+        'gradient-y': 'gradient-y 5s ease infinite',
+        'gradient-xy': 'gradient-xy 5s ease infinite',
    
       },
       keyframes: {
         bounceOnce: {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-15%)' },
+        },
+        'gradient-x': {
+          '0%, 100%': { 'background-size': '200% 200%', 'background-position': 'left center' },
+          '50%': { 'background-size': '200% 200%', 'background-position': 'right center' },
+        },
+        'gradient-y': {
+          '0%, 100%': { 'background-size': '200% 200%', 'background-position': 'center top' },
+          '50%': { 'background-size': '200% 200%', 'background-position': 'center bottom' },
+        },
+        'gradient-xy': {
+          '0%, 100%': { 'background-size': '200% 200%', 'background-position': 'left top' },
+          '50%': { 'background-size': '200% 200%', 'background-position': 'right bottom' },
         },
        
 
@@ -45,6 +60,7 @@ export default {
         'xl': '1280px', // Default extra large screen
         
       },
+      
 
      
     },
