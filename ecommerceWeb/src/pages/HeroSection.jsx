@@ -10,6 +10,7 @@ import { NavLink } from 'react-router-dom';
 import { HiChevronDown } from "react-icons/hi2";
 import HeroListProducts from '../components/products/HeroListProducts';
 import { MdArrowForwardIos } from "react-icons/md";
+import Footer from '../components/Footer';
 
 
 export default function HeroSection() {
@@ -74,7 +75,7 @@ export default function HeroSection() {
                 <p className='text-center font-thin tracking-[0.2em] animate-bounce sm:text-sm md:text-lg lg:text-xl xl:text-xl text-[8px] mt-3'>CATEGORIES </p>
                 <HiChevronDown className='animate-bounce' />
                 <div className="categoyGrid grid grid-cols-4 gap-0  lg:mx-auto md:ml-36 sm:ml-20 xs:ml-16 xss:ml-12 xs:mx-auto mt-12   ">
-                    <NavLink to="fashion" className=" 
+                    <NavLink to="product1/fashion" className=" 
                     relative before:content-[attr(data-tip)]
                     before:opacity-0
                     hover:before:opacity-100
@@ -82,7 +83,7 @@ export default function HeroSection() {
                     " data-tip="fashion"><img src='./categories/wardrobe.png' className='w-10 sm:w-12 md:w-16 lg:w-20 xl:w-20 hover:brightness-50' data-aos="zoom-in" data-aos-delay="600" data-aos-once="true" /></NavLink>
 
                     <NavLink 
-                    to="home&kitchen"
+                    to="product1/home&kitchen"
                     className=" 
                     relative before:content-[attr(data-tip)] 
                     before:opacity-0
@@ -92,7 +93,7 @@ export default function HeroSection() {
                     ><img src='./categories/home&kitchen.png' className='w-10 sm:w-12 md:w-16 lg:w-20  hover:brightness-50 ' data-aos="zoom-in" data-aos-delay="600" data-aos-once="true" /></NavLink>
 
                     <NavLink 
-                    to="electronics"
+                    to="product1/electronics"
                     data-tip="Electronics/gadgets"
                     className=" 
                     relative before:content-[attr(data-tip)] block
@@ -102,7 +103,7 @@ export default function HeroSection() {
                     
                     ><img src='./categories/electronics.png' className='w-10 sm:w-12 md:w-16 xl:w-20 lg:w-20 hover:brightness-50 ' data-aos="zoom-in " data-aos-delay="600" data-aos-once="true" /></NavLink>
 
-                    <NavLink to="arts&crafts"
+                    <NavLink to="product1/arts&crafts"
                       data-tip="arts&crafts"
                       className=" 
                       relative before:content-[attr(data-tip)]
@@ -111,7 +112,7 @@ export default function HeroSection() {
                      
                      ><img src='./categories/porcelain.png' className='w-10 sm:w-12 xl:w-20 md:w-16 lg:w-20 hover:brightness-50 ' data-aos="zoom" data-aos-delay="600" data-aos-once="true" /></NavLink>
 
-                    <NavLink to="beauty"
+                    <NavLink to="product1/beauty"
                      data-tip="Beauty"
                      className=" 
                      relative before:content-[attr(data-tip)]
@@ -120,7 +121,7 @@ export default function HeroSection() {
                     
                     ><img src='./categories/beauty.png' className=' w-10 sm:w-12 xl:w-20 md:w-16 lg:w-20 hover:brightness-50 ' data-aos="zoom-in" data-aos-delay="600" data-aos-once="true" /></NavLink>
 
-                    <NavLink to="sports" 
+                    <NavLink to="product1/sports" 
                      data-tip="Sports"
                      className=" 
                      relative before:content-[attr(data-tip)]
@@ -129,7 +130,7 @@ export default function HeroSection() {
                     
                     ><img src='./categories/sports.png' className=' w-10 sm:w-12 xl:w-20 md:w-16 lg:w-20 hover:brightness-50 ' data-aos="fade-down" data-aos-delay="600" data-aos-once="true" /></NavLink>
 
-                    <NavLink to="furniture"
+                    <NavLink to="product1/furniture"
                      data-tip="Furniture"
                      className=" 
                      relative before:content-[attr(data-tip)]
@@ -137,7 +138,7 @@ export default function HeroSection() {
                     hover:before:opacity-100"
                     ><img src='./categories/furnitures.png' className=' w-10 sm:w-12 md:w-16 xl:w-20 lg:w-20 hover:brightness-50 ' data-aos="fade-down" data-aos-delay="600" data-aos-once="true" /></NavLink>
 
-                    <NavLink to="grocery"
+                    <NavLink to="product1/grocery"
                      data-tip="grocery"
                      className=" 
                      relative before:content-[attr(data-tip)]
@@ -174,6 +175,15 @@ export default function HeroSection() {
 
             </div>
             {/* top or for you or feature or  */}
+             
+
+
+             {/* footer */}
+            <div className="footer border-t-2 bg-stone-400 mt-24 h-[25rem]">
+               <Footer/>
+
+
+            </div>
 
 
 

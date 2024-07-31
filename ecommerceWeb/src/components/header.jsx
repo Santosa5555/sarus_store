@@ -73,8 +73,6 @@ const LargeScreenHeader = ({ cartProducts }) => {
                         // onKeyUp={}
                         />
 
-
-/
                     </form>
 
 

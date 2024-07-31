@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { add } from '../../stores/cartslice'
+import { add } from '../stores/cartslice'
 import { Provider } from 'react-redux'
-import store from '../../stores/store'
+import store from '../stores/store'
 import axios from 'axios';
 import { asyncThunkCreator } from '@reduxjs/toolkit'
-import useFetch from '../../c-hooks/use-fetch'
-
+import useFetch from '../c-hooks/use-fetch'
+import { Outlet } from 'react-router-dom'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 export default function Product1() {
 
@@ -27,7 +29,7 @@ export default function Product1() {
     return (
         <div>
             <Provider store={store}>
-                {loading && <div className='text-center'>loading...</div>}
+                {loading && <SkeletonLoader/>}
                 {/* {error && <div>{error}</div>} */}
                 {!loading && (
                     <div className="">
@@ -60,3 +62,29 @@ export default function Product1() {
 
     )
 }
+
+
+// SkeletonLoader
+const SkeletonLoader = () => {
+    return (
+      <div className="grid grid-cols-4 gap-4 custom-grid ml-36 mr-36">
+        {Array.from({ length: 8 }).map((_, index) => (
+          <div
+            key={index}
+            className="border-2 flex flex-col justify-between border-gray-300 p-4 bg-gray-200 animate-pulse"
+          >
+            {/* Placeholder for image */}
+            <div className=" h-64 bg-gray-300 mb-4 " ></div>
+            <div className="flex flex-col flex-grow justify-between">
+              {/* Placeholder for title */}
+              <div className="bg-gray-300 h-4 mb-2 rounded w-3/4"></div>
+              {/* Placeholder for price */}
+              <div className="bg-gray-300 h-4 mb-4 rounded w-1/2"></div>
+              {/* Placeholder for button */}
+              <div className="bg-gray-300 h-8 rounded w-full"></div>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  };
